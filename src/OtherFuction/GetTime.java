@@ -3,9 +3,7 @@ package OtherFuction;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-/**
- * Created by Administrator on 20178/16 0016.
- */
+
 public class GetTime {
 
     public static String NowTime() {
