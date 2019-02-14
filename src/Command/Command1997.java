@@ -8,9 +8,7 @@ import java.util.regex.Pattern;
 
 import static java.lang.System.arraycopy;
 
-/**
- * Created by Administrator on 2017/6/30 0030.
- */
+
 public class Command1997 {
     public static final String REQUEST_DATA = "request_data";
     public static final String READ_SUBSEQUENT_DATA = "read_subsequent_data";
