@@ -2,9 +2,7 @@ package DataIdentify;
 
 import java.util.*;
 
-/**
- * Created by anyuan on and Taylor 2017/3/5.
- */
+
 public class DataIdentify2007 {
     public List<byte[]> dataIdent = new ArrayList<>();
     public Map<String,String> identifyname=new HashMap<String,String>();
