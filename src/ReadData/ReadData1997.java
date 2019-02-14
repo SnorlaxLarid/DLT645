@@ -10,9 +10,7 @@ import WriteDataToDatabase.WriteDataToDatabase;
 import java.util.Arrays;
 import java.util.Random;
 
-/**
- * Created by Administrator on 2017/5/28 0028.
- */
+
 public class ReadData1997{
     private  int  lengthOfData;
     private  int doc;//确定小数点
