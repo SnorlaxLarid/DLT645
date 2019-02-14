@@ -2,16 +2,12 @@ package Driver;
 
 import java.sql.*;
 
-/**
- * Created by Administrator on 2017/6/28 0028.
- */
+
 public class Driver {
-//    private static final String URL="jdbc:mysql://47.93.235.197:3306/电力大数据?useSSL=false";
-//    private static final String USER="Taylor";
-//    private static final String PASSWORD="Qian";
-private static final String URL="jdbc:mysql://localhost:3306/ebigdata?useSSL=false";
-    private static final String USER="root";
-    private static final String PASSWORD="icanfly";
+
+private static final String URL="yourMysqlURL";
+    private static final String USER="yourusername";
+    private static final String PASSWORD="yourpassword";
     private static Connection connection;
 
     static {
