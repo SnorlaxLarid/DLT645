@@ -2,9 +2,7 @@ package OtherFuction;
 
 import java.util.Arrays;
 
-/**
- * Created by Administrator on 2017/8/15 0015.
- */
+
 public class ToHex {
     static char[] BCDCode=new char[]{'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F','0'};
     public static String ToHex(byte[] bytes)
