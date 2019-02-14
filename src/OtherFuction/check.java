@@ -2,9 +2,7 @@ package OtherFuction;
 
 import static java.lang.System.arraycopy;
 
-/**
- * Created by Administrator on 2017/7/1 0001.
- */
+
 public class check {
     public static String GetBCDAddress(byte[] address) {
         byte[] byteAddress = new byte[6];
