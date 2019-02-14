@@ -16,13 +16,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 
-/**
- * Created by Administrator on 2017/5/25 0025.
- *
- * 几乎不改变之前Socket的源码
- * 主线程用于图形界面的更新
- *      by zxy on 2018.10.2
- */
+
 public class WindowsFrame {
     public static String message="Number of Current Client ：    ";
     private  static JFrame frame=new JFrame("Collecting Data For Smart Ammeter");
