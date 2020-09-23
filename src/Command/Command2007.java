@@ -111,7 +111,7 @@ public class Command2007 {
                 bytesFrame = generateFreezeDataDataFrame(bytesFrame);
                 break;
             case CHANGE_COMM_RATE:
-                bytesFrame = generateChangeCommRateDataFrame(bytesFrame);
+                bytesFrame = generateChangeCommRateDataFrame(bytesFrame, dataIdentifier);
                 break;
             case CHANGE_PASSWORD:
                 bytesFrame = generateChangePasswordDataFrame(bytesFrame, dataIdentifier);
@@ -127,12 +127,12 @@ public class Command2007 {
         return new byte[0];
     }
 
-    private byte[] generateChangeCommRateDataFrame(byte[] bytes) {
+    private byte[] generateChangeCommRateDataFrame(byte[] bytes, byte[] dataIdentifier) {
         byte[] bytesFrame = new byte[bytes.length + 5];
         arraycopy(bytes, 0, bytesFrame, 0, bytes.length);
         bytesFrame[bytes.length] = 0x17;
         bytesFrame[bytes.length + 1] = 0x01;
-        bytesFrame[bytes.length + 2] = Z_byte;
+        bytesFrame[bytes.length + 2] = dataIdentifier[0];
         bytesFrame[bytes.length + 3] = getSigned(getCSCode(bytesFrame, 0, bytes.length + 2));
         bytesFrame[bytes.length + 4] = 0x16;
         return bytesFrame;
